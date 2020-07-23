@@ -4,14 +4,28 @@ import RugCard from "../cards/RugCard"
 import {api} from "../../services/api"
 
 export default function RugBrowser() {
+    const [rugs, setRugs] = useState(null)
 
     useEffect(() => {
         api.getRugs()
-            .then(console.log)
+            .then(resp => setRugs(resp.data))
     })
+
+    const renderRugs = () => {
+        return rugs.map((rug,index) =>{
+            return (
+                <li key={index}>
+                    <RugCard rug={rug} />
+                </li>
+            )
+        })
+    }
+
     return (
         <div>
-
+            <ul className={Style.rugContainer}>
+                {rugs && renderRugs()}
+            </ul>
         </div>
     )
 }

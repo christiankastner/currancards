@@ -1,0 +1,11 @@
+$rugcard-width: 250px;
+
+.card {
+    width: $rugcard-width;
+    
+    .content {
+        h4 {
+            text-transform: uppercase;
+        }
+    }
+}
