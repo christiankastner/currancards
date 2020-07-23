@@ -1,6 +1,8 @@
 $rugcard-width: 250px;
 
 .rugCard {
+    margin: 0 auto;
+    transition: 2s;
     width: $rugcard-width;
     box-shadow: 2px 2px 25px rgba(0,0,0,.1);
     border-radius: .25em;
@@ -22,15 +24,16 @@ $rugcard-width: 250px;
         }
         .footer {
             display: flex;
-            button {
-                cursor: pointer;
-            }
             .swatch {
+                margin-right: .75em;
                 border-radius: 50%;
                 border: none;
                 height: 1em;
                 width: 1em;
-                margin-right: .75em;
+                cursor: pointer;
+            }
+            .swatchActive {
+                border: 1px solid black;
             }
             a {
                 font-size: .75em;
@@ -39,6 +42,6 @@ $rugcard-width: 250px;
         }
     }
     &:hover {
-        box-shadow: 4px 4px 25px rgba(0,0,0,.2);
+        box-shadow: 4px 4px 25px rgba(0,0,0,.3);
     }
 }

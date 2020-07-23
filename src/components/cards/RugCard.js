@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Style from "./RugCard.module.scss";
+import {classNames} from "../../services/utils"
 
 export default function RugCard({rug}) {
     const [selected, setSelected] = useState(0)
@@ -8,8 +9,8 @@ export default function RugCard({rug}) {
         if (!rug.hasOwnProperty("colors")) return
         return rug.colors.slice(0,maxColors).map((color,index) => {
             return (
-                <button title={color.color} onClick={() => setSelected(index)} className={Style.swatch} style={{background: `url(${color.image})`}}>
-                </button>
+                    <button className={classNames(index === selected ? Style.swatchActive : "",Style.swatch)} title={color.color} style={{background: `url(${color.image})`}} onClick={() => setSelected(index)}>
+                    </button>
             )
     })}
 
