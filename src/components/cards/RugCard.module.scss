@@ -1,11 +1,29 @@
 $rugcard-width: 250px;
 
-.card {
+.rugCard {
     width: $rugcard-width;
-    
+    box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+    border-radius: .25em;
+    overflow: hidden;
     .content {
+        padding: 1em;
         h4 {
             text-transform: uppercase;
+            margin: 0 0 .25em;
+        }
+        p {
+            margin: 0;
+            color: grey;
+            margin-bottom: .5em;
+        }
+        .footer {
+            display: flex;
+            .swatch {
+                border-radius: 50px;
+                height: 1em;
+                width: 1em;
+                margin-right: .5em;
+            }
         }
     }
 }

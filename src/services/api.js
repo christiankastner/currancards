@@ -4,8 +4,28 @@ const jsonResp = {
             name: "astute",
             price: 49,
             image: "https://www.sisalcarpet.com/images/weaves/200/astute_curry.jpg",
-            colors: [
-
+            types: [
+                {
+                    color: "curry",
+                    image: "https://www.sisalcarpet.com/images/weaves/200/astute_curry.jpg"
+                },
+                {
+                    color: "friendly tan",
+                    image: "https://www.sisalcarpet.com/images/weaves/200/astute_friendlytan.jpg"
+                },
+                {
+                    color: "intuition grey",
+                    image: "https://www.sisalcarpet.com/images/weaves/200/astute_intuitiongrey.jpg"
+                },
+                {
+                    color: "stone",
+                    image: "https://www.sisalcarpet.com/images/weaves/200/astute_stone.jpg"
+                },
+                {
+                    color: "traveler brown",
+                    image: "https://www.sisalcarpet.com/images/weaves/200/astute_stone.jpg",
+                    swatchColor:
+                }
             ]
         },
         {
