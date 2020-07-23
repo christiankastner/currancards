@@ -3,24 +3,42 @@ const jsonResp = {
         {
             name: "astute",
             price: 49,
-            image: "https://www.sisalcarpet.com/images/weaves/200/astute_curry.jpg"
+            image: "https://www.sisalcarpet.com/images/weaves/200/astute_curry.jpg",
+            colors: [
+
+            ]
         },
         {
             name: "barcelona",
             price: 135,
-            image: "https://www.sisalcarpet.com/images/weaves/200/barcelona_timber.jpg"
+            image: "https://www.sisalcarpet.com/images/weaves/200/barcelona_timber.jpg",
+            colors: [
+                
+            ]
         },
         {
             name: "basque",
             price: 52,
-            image: "https://www.sisalcarpet.com/images/weaves/200/basque_cognac.jpg"
+            image: "https://www.sisalcarpet.com/images/weaves/200/basque_cognac.jpg",
+            colors: [
+                
+            ]
         },
         {
             name: "belfast",
             price: 78,
-            image: "https://www.sisalcarpet.com/images/weaves/200/belfast_clove.jpg"
+            image: "https://www.sisalcarpet.com/images/weaves/200/belfast_clove.jpg",
+            colors: [
+                
+            ]
         }
     ]
 }
 
-const getRugs = () => (new Promise()).then(() => jsonResp)
+const getRugs = () => {
+    return Promise.resolve(jsonResp);
+}
+
+export const api = {
+    getRugs
+}
