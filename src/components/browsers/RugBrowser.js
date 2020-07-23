@@ -14,7 +14,9 @@ export default function RugBrowser() {
     const renderRugs = () => {
         return rugs.map((rug,index) =>{
             return (
-                <RugCard key={index} rug={rug} />
+                <li key={index}>
+                    <RugCard rug={rug} />
+                </li>
             )
         })
     }
