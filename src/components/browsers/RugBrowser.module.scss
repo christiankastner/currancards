@@ -1,10 +1,9 @@
 @import "../cards/RugCard.module.scss";
 
 .main {
-    width: 100%;
-    margin: 0;
+    text-align: left;
     .rugContainer {
-        margin: 0 auto;
+        padding: 0;
         list-style: none;
         display: grid;
         grid-gap: 1em;
