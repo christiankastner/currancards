@@ -4,6 +4,7 @@ const jsonResp = {
             name: "astute",
             price: 49,
             image: "https://www.sisalcarpet.com/images/weaves/200/astute_curry.jpg",
+            link: "https://www.sisalcarpet.com/rugs/Astute",
             colors: [
                 {
                     color: "curry",
@@ -23,7 +24,7 @@ const jsonResp = {
                 },
                 {
                     color: "traveler brown",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/astute_stone.jpg",
+                    image: "https://www.sisalcarpet.com/images/weaves/200/astute_travelerbrown.jpg",
                 },
             ]
         },
@@ -31,6 +32,7 @@ const jsonResp = {
             name: "barcelona",
             price: 135,
             image: "https://www.sisalcarpet.com/images/weaves/200/barcelona_timber.jpg",
+            link: "https://www.sisalcarpet.com/rugs/Barcelona",
             colors: [
                 {
                     color: "canvas",
@@ -62,6 +64,7 @@ const jsonResp = {
             name: "basque",
             price: 52,
             image: "https://www.sisalcarpet.com/images/weaves/200/basque_cognac.jpg",
+            link: "https://www.sisalcarpet.com/rugs/Basque",
             colors: [
                 {
                     color: "canyon",
@@ -100,6 +103,7 @@ const jsonResp = {
         {
             name: "belfast",
             price: 78,
+            link: "https://www.sisalcarpet.com/rugs/Belfast",
             image: "https://www.sisalcarpet.com/images/weaves/200/belfast_clove.jpg",
             colors: [
                 {

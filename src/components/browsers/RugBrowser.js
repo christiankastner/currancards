@@ -22,7 +22,7 @@ export default function RugBrowser() {
     }
 
     return (
-        <div>
+        <div className={Style.main}>
             <ul className={Style.rugContainer}>
                 {rugs && renderRugs()}
             </ul>

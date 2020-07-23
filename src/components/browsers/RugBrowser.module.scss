@@ -1,9 +1,14 @@
 @import "../cards/RugCard.module.scss";
 
-.rugContainer {
-    list-style: none;
-    display: grid;
-    grid-gap: 1em;
-    list-style: none;
-    grid-template-columns: repeat(auto-fit, minmax($rugcard-width, 1fr));
+.main {
+    width: 100%;
+    margin: 0;
+    .rugContainer {
+        margin: 0 auto;
+        list-style: none;
+        display: grid;
+        grid-gap: 1em;
+        list-style: none;
+        grid-template-columns: repeat(auto-fit, minmax($rugcard-width, 1fr));
+    }
 }

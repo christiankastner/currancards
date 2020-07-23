@@ -16,11 +16,11 @@ export default function RugCard({rug}) {
 
     return (
         <div className={Style.rugCard}>
-            <a href="#">
+            <a href={rug.link}>
                 <img src={rug.colors[selected].image}/>
             </a>
             <div className={Style.content}>
-                <a href="#">
+                <a href={rug.link}>
                     <h4>{rug.name}</h4>
                     <p>${rug.price} SQ YD</p>
                 </a>
