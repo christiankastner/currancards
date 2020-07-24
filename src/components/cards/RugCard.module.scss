@@ -23,33 +23,9 @@ $rugcard-width: 250px;
         .footer {
             display: flex;
             margin-bottom: .5em;
-            .swatchContainer {
-                display: flex;
-                text-align: center;
-                border: 1px solid #ffffff;
-                border-radius: 50%;
-                overflow: hidden;
-                height: 2em;
-                width: 2em;
+            & > div {
                 margin-right: .25em;
-                .swatch {
-                    border: none;
-                    border-radius: 50%;
-                    margin: auto;
-                    padding: 0;
-                    height: 90%;
-                    width: 90%;
-                    cursor: pointer;
-                    position: relative;
-                }
-                &:hover {
-                    border: 1px solid grey;
-                }
             }
-            .activeSwatch {
-                border: 1px solid black;
-            }
-            
             a {
                 font-size: .75em;
                 margin: auto;

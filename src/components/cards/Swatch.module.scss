@@ -1,0 +1,26 @@
+.swatchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 2em;
+    width: 2em;
+    .swatch {
+        border: none;
+        margin: auto!important;
+        border-radius: 50%;
+        padding: 0;
+        height: 90%;
+        width: 90%;
+        cursor: pointer;
+        position: relative;
+    }
+    &:hover {
+        border: 1px solid grey;
+    }
+}
+.activeSwatch {
+    border: 1px solid black;
+}
