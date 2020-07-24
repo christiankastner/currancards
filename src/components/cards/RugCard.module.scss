@@ -7,9 +7,6 @@ $rugcard-width: 250px;
     box-shadow: 2px 2px 25px rgba(0,0,0,.1);
     border-radius: .25em;
     overflow: hidden;
-    a {
-        text-decoration: none;
-    }
     .content {
         padding: 1em;
         h4 {
@@ -28,6 +25,7 @@ $rugcard-width: 250px;
             margin-bottom: .5em;
             .swatchContainer {
                 display: flex;
+                text-align: center;
                 border: 1px solid #ffffff;
                 border-radius: 50%;
                 overflow: hidden;
