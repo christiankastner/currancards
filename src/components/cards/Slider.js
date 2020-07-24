@@ -4,12 +4,18 @@ import Style from "./Slider.module.scss";
 
 export default function Slider({children, split}) {
     const [page, setPage] = useState(0);
+
+    // This works for decrementing too if a neg number is
+    // inputted. 
     const increment = useCallback((amount) => {
         setPage(page => page += amount)
     })
+
+    // Renders the right cards based on paginated state
     const renderElements = () => {
         return children.slice(page, page + split)
     }
+
 
     return (
         <div className={Style.main}>

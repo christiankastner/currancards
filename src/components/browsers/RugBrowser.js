@@ -3,14 +3,20 @@ import Style from "./RugBrowser.module.scss";
 import {RugCard, RugCardWithSlide} from "../cards/RugCard"
 import {api} from "../../services/api"
 
+// This component just renders the fake API data in the services
+// directory. It holds the returned data in state.  
 export default function RugBrowser() {
     const [rugs, setRugs] = useState(null)
 
     useEffect(() => {
         api.getRugs()
             .then(resp => setRugs(resp.data))
+            .catch(err => {
+                console.log(err)
+            })
     })
 
+    // This just renders our standard non slider cards
     const renderRugs = () => {
         return rugs.map((rug,index) =>{
             return (
@@ -21,6 +27,7 @@ export default function RugBrowser() {
         })
     }
 
+    // This renders our alternate style cards
     const renderRugsWithSlide = () => {
         return rugs.map((rug,index) =>{
             return (

@@ -130,83 +130,12 @@ const jsonResp = {
                     color: "pumice",
                     image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
                 },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
-                {
-                    color: "pumice",
-                    image: "https://www.sisalcarpet.com/images/weaves/200/belfast_pumice.jpg",
-                },
             ]
         }
     ]
 }
 
+// This just simulates an API call and returns a resolved promise
 const getRugs = () => {
     return Promise.resolve(jsonResp);
 }
