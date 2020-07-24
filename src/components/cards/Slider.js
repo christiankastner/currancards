@@ -14,7 +14,9 @@ export default function Slider({children, split}) {
     return (
         <div className={Style.main}>
             {page > 0 && <button className={Style.backward} onClick={() => increment(-split)}><Arrow/></button>}
-            {renderElements()}
+            <div className={Style.footer}>   
+                {renderElements()}
+            </div>
             {page + split < children.length && <button className={Style.forward} onClick={() => increment(split)}><Arrow/></button>}
         </div>
     )

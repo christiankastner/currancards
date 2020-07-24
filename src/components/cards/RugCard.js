@@ -56,9 +56,9 @@ export function RugCardWithSlide({rug}) {
                     <h4>{rug.name}</h4>
                     <p>${rug.price} SQ YD</p>
                 </a>
-            <Slider split={maxColors}>
-                {renderSwatches()}
-            </Slider>
+                <Slider split={maxColors}>
+                    {renderSwatches()}
+                </Slider>
             </div>
         </div>
     )
