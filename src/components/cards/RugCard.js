@@ -41,7 +41,7 @@ export function RugCardWithSlide({rug}) {
     const [selected, setSelected] = useState(0)
     const renderSwatches = () => {
         if (!rug.hasOwnProperty("colors")) return
-        return rug.colors.slice(0,maxColors).map((color,index) => {
+        return rug.colors.map((color,index) => {
             return (
                 <div className={classNames(index === selected ? Style.swatchActive : "", Style.swatchContainer)} >
                     <p className={Style.swatch} title={color.color} style={{background: `url(${color.image})`}} onClick={() => setSelected(index)}>
@@ -49,10 +49,6 @@ export function RugCardWithSlide({rug}) {
                 </div>
             )
     })}
-
-    const hello = () => {
-        return <p>hello</p>
-    }
 
     return (
         <div className={Style.rugCard}>
