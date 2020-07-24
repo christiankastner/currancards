@@ -1,4 +1,5 @@
 import React, {useState, useCallback} from "react";
+import {ReactComponent as Arrow} from "../svg/triangle.svg";
 import Style from "./Slider.module.scss";
 
 export default function Slider({children, split}) {
@@ -10,12 +11,11 @@ export default function Slider({children, split}) {
         return children.slice(page, page + split)
     }
 
-
     return (
         <div className={Style.main}>
-            {page > 0 && <button onClick={() => increment(-split)}>Prev</button>}
+            {page > 0 && <button className={Style.backward} onClick={() => increment(-split)}><Arrow/></button>}
             {renderElements()}
-            {page + split < children.length && <button onClick={() => increment(split)}>Next</button>}
+            {page + split < children.length && <button className={Style.forward} onClick={() => increment(split)}><Arrow/></button>}
         </div>
     )
 }

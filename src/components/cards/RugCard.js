@@ -5,17 +5,21 @@ import Slider from "./Slider";
 
 const maxColors = 5;
 
+export function Swatch({swatch, onClick, className}) {
+    return (
+        <div className={classNames(Style.swatchContainer,className)} >
+            <p className={Style.swatch} title={swatch.color} style={{background: `url(${swatch.image})`}} onClick={onClick}>
+            </p>
+        </div>
+    )
+}
+
 export function RugCard({rug}) {
     const [selected, setSelected] = useState(0)
     const renderSwatches = () => {
         if (!rug.hasOwnProperty("colors")) return
-        return rug.colors.slice(0,maxColors).map((color,index) => {
-            return (
-                <div className={classNames(index === selected ? Style.swatchActive : "", Style.swatchContainer)} >
-                    <p className={Style.swatch} title={color.color} style={{background: `url(${color.image})`}} onClick={() => setSelected(index)}>
-                    </p>
-                </div>
-            )
+        return rug.colors.slice(0,maxColors).map((swatch,index) => {
+            return <Swatch className={selected === index ? Style.activeSwatch : ""} swatch={swatch} key={index}/>
     })}
 
     return (
@@ -41,13 +45,8 @@ export function RugCardWithSlide({rug}) {
     const [selected, setSelected] = useState(0)
     const renderSwatches = () => {
         if (!rug.hasOwnProperty("colors")) return
-        return rug.colors.map((color,index) => {
-            return (
-                <div className={classNames(index === selected ? Style.swatchActive : "", Style.swatchContainer)} >
-                    <p className={Style.swatch} title={color.color} style={{background: `url(${color.image})`}} onClick={() => setSelected(index)}>
-                    </p>
-                </div>
-            )
+        return rug.colors.map((swatch,index) => {
+            return <Swatch className={selected === index ? Style.activeSwatch : ""} swatch={swatch} key={index}/>
     })}
 
     return (

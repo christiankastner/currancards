@@ -2,28 +2,41 @@
     display: flex;
     margin-bottom: .5em;
     height: auto;
-    & > div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #ffffff;
-        border-radius: 50%;
-        overflow: hidden;
-        height: 2em;
-        width: 2em;
-        margin-right: .25em;
-        & > p {
-            border: none;
-            border-radius: 50%;
-            margin: auto;
-            padding: 0;
-            height: 90%;
-            width: 90%;
-            cursor: pointer;
-            position: relative;
+    button {
+        width: 1em;
+        height: 1em;
+        background: none;
+        border:none;
+        cursor: pointer;
+        svg {
+            height: 1em;
         }
-        &:hover {
-            border: 1px solid grey;
+    }
+    & > .swatch {
+        div {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+            overflow: hidden;
+            height: 2em;
+            width: 2em;
+            margin-right: .25em;
+            & > p {
+                border: none;
+                border-radius: 50%;
+                margin: auto;
+                padding: 0;
+                height: 90%;
+                width: 90%;
+                cursor: pointer;
+                position: relative;
+            }
+            &:hover {
+                border: 1px solid grey;
+            }
         }
     }
     .swatchActive {
