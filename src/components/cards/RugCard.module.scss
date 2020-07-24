@@ -2,7 +2,7 @@ $rugcard-width: 250px;
 
 .rugCard {
     margin: 0 auto;
-    transition: 2s;
+    transition: 1s;
     width: $rugcard-width;
     box-shadow: 2px 2px 25px rgba(0,0,0,.1);
     border-radius: .25em;
@@ -19,22 +19,39 @@ $rugcard-width: 250px;
         }
         p {
             margin: 0;
-            color: grey;
+            color: rgb(100,100,100);
             margin-bottom: .5em;
+            font-size: .75em;
         }
         .footer {
             display: flex;
-            .swatch {
-                margin-right: .75em;
+            margin-bottom: .5em;
+            .swatchContainer {
+                display: flex;
+                border: 1px solid #ffffff;
                 border-radius: 50%;
-                border: none;
-                height: 1em;
-                width: 1em;
-                cursor: pointer;
+                overflow: hidden;
+                height: 2em;
+                width: 2em;
+                margin-right: .25em;
+                .swatch {
+                    border: none;
+                    border-radius: 50%;
+                    margin: auto;
+                    padding: 0;
+                    height: 90%;
+                    width: 90%;
+                    cursor: pointer;
+                    position: relative;
+                }
+                &:hover {
+                    border: 1px solid grey;
+                }
             }
             .swatchActive {
                 border: 1px solid black;
             }
+            
             a {
                 font-size: .75em;
                 margin: auto;
@@ -42,6 +59,6 @@ $rugcard-width: 250px;
         }
     }
     &:hover {
-        box-shadow: 4px 4px 25px rgba(0,0,0,.3);
+        box-shadow: 4px 4px 25px rgba(0,0,0,.5);
     }
 }
